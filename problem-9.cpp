@@ -3,8 +3,15 @@ using namespace std;
 
 int main()
 {
-      for (int i = 1; i <= 10; ++i)
+        int x, y;
+    cin >> x;
+    cin >> y;
+    for (int i = 1; i <= x * y; ++i)
     {
-        cout << i * i * i << endl;
+        if (i % x == 0 && i % y == 0)
+        {
+            cout << i << endl;
+            break;
+        }
     }
 }

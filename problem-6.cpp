@@ -3,8 +3,12 @@ using namespace std;
 
 int main()
 {
-    for (int i = 2; i <= 20; i += 2)
+    int n;
+    cin >> n;
+        int fact = 1;
+    while (n--)
     {
-        cout << i << endl;
+        fact = fact * n;
     }
+    cout << fact << endl;
 }

@@ -3,8 +3,20 @@ using namespace std;
 
 int main()
 {
-     for (int i = 1; i <= 10; ++i)
+    int n;
+    int i;
+    cin >> n;
+        if(n<=1)
     {
-        cout << i * i << endl;
+        cout<<"NO"<<endl;
+    }
+    for(i=2;i<=n-1;++i)
+    {
+        if(n%i==0)
+        cout<<"NO"<<endl;
+    }
+    if(i==n)
+    {
+        cout<<"Yes"<<endl;
     }
 }

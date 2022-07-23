@@ -3,9 +3,12 @@ using namespace std;
 
 int main()
 {
-    for (int i = 20; i >= 1; --i)
+    int n;
+    cin >> n;
+    int sum = 0;
+    for (int i = 1; i <= n; ++i)
     {
-        if (i % 2 == 1)
-            cout << i << endl;
+        sum = sum + (i * i * i);
     }
+    cout << sum << endl;
 }

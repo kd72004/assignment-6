@@ -3,9 +3,12 @@ using namespace std;
 
 int main()
 {
-    int i = 5;
-    while (i--)
+    int n;
+    cin >> n;
+    int sum = 0;
+    while (n--)
     {
-        cout << "MY sirG" << endl;
+        sum = sum + n;
     }
+    cout << sum << endl;
 }    

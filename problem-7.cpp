@@ -3,9 +3,14 @@ using namespace std;
 
 int main()
 {
-    for (int i = 20; i >= 1; i += 2)
+    int n;
+    cin >> n;
+    
+        int count = 0;
+    while (n)
     {
-        if (i % 2 == 0)
-            cout << i << endl;
+        n = n / 10;
+        count++;
     }
+    cout << count << "digits in a number" << endl;
 }
